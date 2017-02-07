@@ -1,0 +1,188 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kookoo Site v2</title>
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+	<!-- Header -->
+	<div class="row">
+		<div class="header">
+			<!-- KookooLogo -->
+			<div class="medium-6 large-4 columns" id="headLogo"></div>
+			<!-- Free Delivery -->
+			<div class="medium-6 large-3 columns text-center" id="headFree">
+				<p>Free Delivery<br>
+					<span>Anywhere in South Africa</span></p>
+				</div>
+
+				<!-- Header Form -->
+				<div class="medium-12 large-5 columns headForm" >
+					<div class="small-6 medium-6 columns" id="headForm1">
+						<p><span><a href="#">Sign In |</a> 
+							<a href="#">Register</a></span></p>
+							<input type="text" placeholder="Search">
+						</div>
+						<div class="small-6 medium-6 columns" id="headForm2">
+							<p>011 323 3233<span class="clockIcon"></span></p>
+							<div class="input-group">
+								<input class="input-group-field" type="text" placeholder="Category">
+								<a class="input-group-button button">Go</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Top bar -->
+			<div class="row">
+				<div class="medium-12 columns">
+					<div class="top-bar" id="main-menu">
+						<div class="top-bar-left">
+							<ul class="menu vertical large-horizontal expanded" data-responsive-menu="drilldown medium-dropdown">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Occasions</a></li>
+								<li><a href="#">Treat Him</a></li>
+								<li><a href="#">Treat Her</a></li>
+								<li><a href="#">Personality</a></li>
+								<li><a href="#">Price Range</a></li>
+								<div class="top-bar-right shopping_bag" id="ipadCompatible">
+									<ul class="menu">
+										<li><a href="#"><span class="basketIcon"></span>Shopping Bag: 2 Items</a></li>
+									</ul>
+								</div>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- feature content -->
+			<div class="row">
+				<div class="featureMain">
+					<div class="medium-12 large-9 column">
+					<?php foreach($items as $item) { ?>
+						<div class="feature1" style="background-image:url('$item->image')">
+							<img src="" alt="">
+							<div id="textContent">
+								<h1>Make someone happy</h1>
+								<h4>The Perfect gift for every occasion</h4>
+							</div>
+							<!-- Pagination Circles -->
+							<div class="circleContainer">
+								<span><a href="#"></a>1</span>
+								<span><a href="#"></a>2</span>
+								<span><a href="#"></a>3</span>
+							</div>
+						</div>
+					<?php } ?>
+						
+					</div>
+					<div class="medium-12 large-3 columns">
+						<div class="sideFeatures">
+							<div class="sideFeature1">
+								<div class="sideContent">
+									<h1><span>FREE</span></h1>
+									<h3><span>Gift Wrapping</span></h3>
+									<h5>Beautifully wrapped, every time <i class="fa fa-play-circle"></i></h5>
+								</div>
+							</div>
+							<div class="sideFeature2">
+								<div class="sideContent">
+									<h3><span>Personalized</span></h3>
+									<h3><span>Cards</span></h3>
+									<h5>Add your personal <br>touch to every gift <i class="fa fa-play-circle"></i></h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end feature content -->
+
+			<!-- categories -->
+			<div class="row">
+				<div class="categories">
+					<!-- <div class="categories-nav"> -->
+					<li>
+						<div class="content">
+							<a href="#">Spirits & Wines</a>
+							<div class="imageContainer" style="background-image: url('images/v2/SpiritsWines.png')"></div>
+							<i class="fa fa-play-circle"></i>
+						</div>
+					</li>
+					<li>
+						<div class="content">
+							<a href="#">Gadgets</a>
+							<div class="imageContainer" style="background-image: url('images/v2/Gadgets.png')">
+							</div>
+							<i class="fa fa-play-circle"></i>
+						</div>
+					</li>
+					<li>
+						<div class="content">
+							<a href="#">Outdoor & Living</a>
+							<div class="imageContainer" style="background-image: url('images/v2/OutdoorLiving.png')">
+							</div>
+							<i class="fa fa-play-circle"></i>
+						</div>
+					</li>
+					<li>
+						<div class="content">
+							<a href="#">Flowers & Hampers</a>
+							<div class="imageContainer" style="background-image: url('images/v2/FlowersHampers.png')">
+							</div>
+							<i class="fa fa-play-circle"></i>
+						</div>
+					</li>
+					<li>
+						<div class="content">
+							<a href="#">Lingerie</a>
+							<div class="imageContainer" style="background-image: url('images/v2/Lingerie.png')">
+							</div>
+							<i class="fa fa-play-circle"></i>
+						</div>
+					</li>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<div class="row">
+				<footer class="sub-footer"></footer>
+				<footer class="footerbg">
+					<div class="footer-content">
+						<div class="copyright">
+							<p>Kookoo.co.za 2011   |   All Rights Reserved   |   Terms & Conditions </p>
+						</div>
+						<div class="social_links">
+							<a href="#" class="facebook"></a>
+							<a href="#" class="twitter"></a> 
+						</div>
+					</div>
+				</footer>
+			</div>
+
+			<script src="bower_components/jquery/dist/jquery.js"></script>
+			<script src="bower_components/what-input/dist/what-input.js"></script>
+			<script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+			<script src="js/app.js"></script>
+		</body>
+	</html>
+
+	<?php
+		$thisVariable;
+
+		functions thisFunction(){
+
+	}
+
+	class ThisIsAClass () {
+
+}
+
+
+?>
